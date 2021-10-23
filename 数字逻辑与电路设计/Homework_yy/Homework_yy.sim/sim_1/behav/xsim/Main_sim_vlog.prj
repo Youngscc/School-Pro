@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Homework_yy.srcs/sources_1/new/LSD.v" \
+"../../../../Homework_yy.srcs/sources_1/new/Main.v" \
+"../../../../Homework_yy.srcs/sources_1/new/ShowLight_10.v" \
+"../../../../Homework_yy.srcs/sources_1/new/ShowLight_8.v" \
+"../../../../Homework_yy.srcs/sources_1/new/ShowNumber.v" \
+"../../../../Homework_yy.srcs/sources_1/new/ShowStatus.v" \
+"../../../../Homework_yy.srcs/sources_1/new/ShowTime.v" \
+"../../../../Homework_yy.srcs/sources_1/new/Timer.v" \
+"../../../../Homework_yy.srcs/sources_1/new/compare.v" \
+"../../../../Homework_yy.srcs/sim_1/new/Main_sim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

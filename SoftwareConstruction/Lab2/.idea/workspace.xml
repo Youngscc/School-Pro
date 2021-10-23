@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84c7d684-1981-49fa-96d1-0acbaecd5744" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/~$b2-report-1190200122.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/~WRL2546.tmp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ttB1SyTyhbpZtkittnmVtFnw2s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/junit-4.13.2.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="JUnit.FriendshipGraphTest">
+    <configuration name="FriendshipGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P2.FriendshipGraph" />
+      <module name="HIT-Lab2-1190200122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="P1.poet.Main" />
+      <module name="HIT-Lab2-1190200122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P1.poet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FriendshipGraphTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT-Lab2-1190200122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="P2" />
+      <option name="MAIN_CLASS_NAME" value="P2.FriendshipGraphTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P1.graph in HIT-Lab2-1190200122" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT-Lab2-1190200122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P1.graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="P1.graph" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P1.poet in HIT-Lab2-1190200122" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HIT-Lab2-1190200122" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="P1.poet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="P1.poet" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FriendshipGraphTest" />
+        <item itemvalue="Application.FriendshipGraph" />
+        <item itemvalue="JUnit.P1.poet in HIT-Lab2-1190200122" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.P1.graph in HIT-Lab2-1190200122" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84c7d684-1981-49fa-96d1-0acbaecd5744" name="Default Changelist" comment="" />
+      <created>1623578291563</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623578291563</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$FriendshipGraphTest.ic" NAME="FriendshipGraphTest Coverage Results" MODIFIED="1623599502021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P2.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$GraphStaticTest.ic" NAME="GraphStaticTest Coverage Results" MODIFIED="1623598586669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P1.graph.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$P1_poet_in_HIT_Lab2_1190200122.ic" NAME="P1.poet in HIT-Lab2-1190200122 Coverage Results" MODIFIED="1623599157889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P1.poet.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$ConcreteEdgesGraphTest.ic" NAME="ConcreteEdgesGraphTest Coverage Results" MODIFIED="1623598713080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P1.graph.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$ConcreteVerticesGraphTest.ic" NAME="ConcreteVerticesGraphTest Coverage Results" MODIFIED="1623598649354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P1.graph.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$All_in_HIT_Lab2_1190200122.ic" NAME="All in HIT-Lab2-1190200122 Coverage Results" MODIFIED="1623598346656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HIT_Lab2_1190200122$P1_graph_in_HIT_Lab2_1190200122.ic" NAME="P1.graph in HIT-Lab2-1190200122 Coverage Results" MODIFIED="1623598769018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>P1.graph.*</FILTER>
+    </SUITE>
+  </component>
+</project>

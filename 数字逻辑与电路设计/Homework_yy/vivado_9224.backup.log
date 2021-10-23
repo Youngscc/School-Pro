@@ -1,0 +1,1947 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 18 11:04:05 2020
+# Process ID: 9224
+# Current directory: C:/Users/Youngsc/Desktop/homework/Homework_yy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4252 C:\Users\Youngsc\Desktop\homework\Homework_yy\Homework_yy.xpr
+# Log file: C:/Users/Youngsc/Desktop/homework/Homework_yy/vivado.log
+# Journal file: C:/Users/Youngsc/Desktop/homework/Homework_yy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/soft/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 769.531 ; gain = 167.852
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:07:42 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:07:42 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:13:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:13:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:23:00 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:23:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:29:28 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:29:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:33:11 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:33:11 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:40:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:40:23 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 11:51:10 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 11:51:10 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v w ]
+add_files C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v
+WARNING: [filemgmt 56-12] File 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v' cannot be added to the project because it already exists in the project, skipping this file
+close_hw
+close [ open C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v w ]
+add_files C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Fri Dec 18 12:08:48 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 12:09:36 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 12:14:10 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 12:14:10 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 12:19:02 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 12:19:02 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-tul-1234-tulA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 13:19:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 13:19:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 13:21:24 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 13:21:24 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 13:24:16 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 13:24:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 13:28:20 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 13:28:20 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close [ open C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v w ]
+add_files C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:06:02 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:06:02 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:08:05 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:08:05 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:12:03 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:12:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:28:32 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:28:32 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2743.207 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2743.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2743.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 2953.188 ; gain = 1070.094
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:31:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:41:49 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:41:49 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 14:50:28 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 14:50:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:00:29 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:00:29 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:04:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:04:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:07:34 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:07:34 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:11:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:11:08 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:16:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:16:44 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:21:55 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:21:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 15:25:26 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 15:25:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim/xsim.dir/Main_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 18 20:02:11 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 3199.852 ; gain = 21.414
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3199.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3199.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3199.852 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:08:31 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:08:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 3245.406 ; gain = 0.148
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:17:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:17:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:25:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:25:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:37:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:37:08 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:37:41 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:37:41 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]'
+undo
+INFO: [Common 17-17] undo 'set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]'
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 20:52:46 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 20:52:46 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:03:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:03:23 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:09:57 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:09:57 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:11:33 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:11:33 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:12:16 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:12:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:21:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:21:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:25:55 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:25:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:28:31 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:28:31 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:32:19 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:32:19 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:37:01 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:37:01 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 21:47:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 21:47:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3384.582 ; gain = 0.125
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 3384.582 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3384.582 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 22:01:29 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 22:01:29 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 22:17:48 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 22:17:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 22:24:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 22:24:44 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 22:48:48 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 22:48:48 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 22:54:09 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 22:54:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 23:00:49 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 23:00:49 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Fri Dec 18 23:01:42 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Fri Dec 18 23:01:42 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/Main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a35t_0] 0] [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a35t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:]
+close_hw
+close_design
+close_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3573.480 ; gain = 0.457
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3573.480 ; gain = 0.000
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Dec 19 00:10:29 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.runs/impl_1/runme.log
+open_hw
+reset_run impl_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3573.480 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcsg324-3
+Top: Main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3573.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShowNumber' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShowLight_8' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ShowLight_8' (1#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShowNumber' (2#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v:23]
+INFO: [Synth 8-6157] synthesizing module 'compare' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compare' (3#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShowStatus' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShowStatus' (4#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Timer' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShowTime' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShowLight_10' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'ShowLight_10' (5#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShowTime' (6#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Timer' (7#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LSD' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LSD' (8#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v:23]
+WARNING: [Synth 8-6090] variable 'start' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:199]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:227]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (9#1) [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3573.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3573.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3573.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/constrs_1/new/yy.xdc]
+Finished Parsing XDC File [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/constrs_1/new/yy.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3573.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3573.480 ; gain = 0.000
+23 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3573.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3632.809 ; gain = 0.441
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowLight_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowNumber
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowStatus
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShowTime
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_sim
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/soft/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto aa9faaf422104427a7b2a2f09e12660c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_sim_behav xil_defaultlib.Main_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 7 differs from formal bit length 8 for port 'Figure0' [C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v:37]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ShowLight_8
+Compiling module xil_defaultlib.ShowNumber
+Compiling module xil_defaultlib.compare
+Compiling module xil_defaultlib.ShowStatus
+Compiling module xil_defaultlib.ShowLight_10
+Compiling module xil_defaultlib.ShowTime
+Compiling module xil_defaultlib.Timer
+Compiling module xil_defaultlib.LSD
+Compiling module xil_defaultlib.Main
+Compiling module xil_defaultlib.Main_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Youngsc/Desktop/homework/Homework_yy/Homework_yy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_sim_behav -key {Behavioral:sim_1:Functional:Main_sim} -tclbatch {Main_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Main_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3632.809 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 19 01:44:00 2020...

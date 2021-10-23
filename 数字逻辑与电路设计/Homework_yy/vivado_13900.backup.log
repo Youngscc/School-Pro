@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 19 07:35:41 2020
+# Process ID: 13900
+# Current directory: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2716 C:\Users\Youngsc\Desktop\1190200122- ԬҰ\Homework_yy\Homework_yy.xpr
+# Log file: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/vivado.log
+# Journal file: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Youngsc/Desktop/homework/Homework_yy' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/soft/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 808.883 ; gain = 171.035
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Dec 19 07:36:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Sat Dec 19 07:36:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Dec 19 07:37:51 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Sat Dec 19 07:37:51 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sat Dec 19 07:40:07 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/synth_1/runme.log
+[Sat Dec 19 07:40:07 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 19 07:41:00 2020...

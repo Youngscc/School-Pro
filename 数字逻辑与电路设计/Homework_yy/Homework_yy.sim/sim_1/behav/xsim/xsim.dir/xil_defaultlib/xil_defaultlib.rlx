@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v,1608334789,verilog,,,,Main_sim,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/LSD.v,1608301307,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v,,LSD,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/Main.v,1608312863,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v,,Main,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_10.v,1608226822,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v,,ShowLight_10,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowLight_8.v,1608220634,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v,,ShowLight_8,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowNumber.v,1608265037,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v,,ShowNumber,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowStatus.v,1608298594,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v,,ShowStatus,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/ShowTime.v,1608265083,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v,,ShowTime,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/Timer.v,1608309395,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v,,Timer,,,,,,,,
+C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sources_1/new/compare.v,1608203798,verilog,,C:/Users/Youngsc/Desktop/1190200122- ԬҰ/Homework_yy/Homework_yy.srcs/sim_1/new/Main_sim.v,,compare,,,,,,,,
