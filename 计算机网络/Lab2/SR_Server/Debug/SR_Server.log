@@ -1,0 +1,5 @@
+﻿D:\soft\Visual Studio\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(Debug\)包含从另一个项目(SRser.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  SR_Server.cpp
+D:\Codefield\Workplace\reliabledatatrans\SR_Server\SR_Server.cpp(91,14): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+D:\Codefield\Workplace\reliabledatatrans\SR_Server\SR_Server.cpp(207,18): warning C4309: “=”: 截断常量值
+  SR_Server.vcxproj -> D:\Codefield\Workplace\reliabledatatrans\SR_Server\Debug\SR_Server.exe
