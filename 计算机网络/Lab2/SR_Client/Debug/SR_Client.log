@@ -1,7 +1,0 @@
-﻿  SR_Client.cpp
-D:\Codefield\Workplace\reliabledatatrans\SR_Client\SR_Client.cpp(159,19): warning C4309: “=”: 截断常量值
-D:\Codefield\Workplace\reliabledatatrans\SR_Client\SR_Client.cpp(182,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-D:\Codefield\Workplace\reliabledatatrans\SR_Client\SR_Client.cpp(196,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-D:\Codefield\Workplace\reliabledatatrans\SR_Client\SR_Client.cpp(124,6): warning C4101: “recvSize”: 未引用的局部变量
-D:\Codefield\Workplace\reliabledatatrans\SR_Client\SR_Client.cpp(143,19): warning C4101: “waitSeq”: 未引用的局部变量
-  SR_Client.vcxproj -> D:\Codefield\Workplace\reliabledatatrans\SR_Client\Debug\SR_Client.exe

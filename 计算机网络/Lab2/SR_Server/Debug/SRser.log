@@ -1,4 +1,0 @@
-﻿  源.cpp
-D:\Codefield\Workplace\reliabledatatrans\SRser\源.cpp(91,14): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
-D:\Codefield\Workplace\reliabledatatrans\SRser\源.cpp(207,18): warning C4309: “=”: 截断常量值
-  SRser.vcxproj -> D:\Codefield\Workplace\reliabledatatrans\SRser\Debug\SRser.exe

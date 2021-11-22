@@ -1,6 +1,0 @@
-﻿  GBN_Server.cpp
-D:\Codefield\Workplace\reliabledatatrans\GBN_Server\GBN_Server.cpp(236,18): warning C4309: “=”: 截断常量值
-D:\Codefield\Workplace\reliabledatatrans\GBN_Server\GBN_Server.cpp(335,19): warning C4309: “=”: 截断常量值
-D:\Codefield\Workplace\reliabledatatrans\GBN_Server\GBN_Server.cpp(361,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-D:\Codefield\Workplace\reliabledatatrans\GBN_Server\GBN_Server.cpp(370,19): warning C4244: “=”: 从“unsigned short”转换到“char”，可能丢失数据
-  GBN_Server.vcxproj -> D:\Codefield\Workplace\reliabledatatrans\GBN_Server\Debug\GBN_Server.exe
