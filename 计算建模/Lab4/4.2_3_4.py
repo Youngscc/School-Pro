@@ -82,7 +82,7 @@ def get_ssim(img1, img2):
 
 now_img = cv2.imread("lena512gray.tif", 0)
 
-rate = 95
+rate = 45
 print("Now rate is "+str(rate)+"%.")
 now_img_1 = make_noise(now_img, 0, 255, rate, 0.5)
 now_img_2 = filter_out_noise(now_img_1, 1)

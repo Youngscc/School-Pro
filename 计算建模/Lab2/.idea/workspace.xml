@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28ab57c1-044c-438a-be85-2fe2a9e28778" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab3/3.1_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/3.3.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab3/3.3.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/Lab1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/1190200122-袁野-实验五.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/5.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/~$90200122-袁野-实验五.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab5/实验五-ransac和最小二乘对直线和曲线的拟合2021.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/4.2_3_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/4.2_3_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/实验4-噪声模型与椒盐去噪2021 (1).pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
