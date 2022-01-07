@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hit.spt.mapper.UserMapper">
+    <insert id="insertUser" parameterType="User">
+        insert into user(u_name, password, identity)
+        values (#{u_name}, #{password}, #{identity})
+    </insert>
+    <select id="queryUserByName" parameterType="java.lang.String" resultType="User">
+        select *
+        from user
+        where u_name = #{u_name}
+    </select>
+    <select id="queryUserByID" parameterType="java.lang.Integer" resultType="User">
+        select *
+        from user
+        where u_id = #{u_id}
+    </select>
+    <delete id="deleteUser" parameterType="java.lang.String">
+        delete
+        from user
+        where u_name = #{u_name}
+    </delete>
+</mapper>

@@ -1,0 +1,31 @@
+<login wx:if="{{PageCur=='info' && name==null}}"></login>
+<stu wx:if="{{PageCur=='info' && name!=null && identity==1}}"></stu>
+<pro wx:if="{{PageCur=='info' && name!=null && identity==2}}"></pro>
+<admin wx:if="{{PageCur=='info' && name!=null && identity==3}}"></admin>
+<home wx:if="{{PageCur=='home'}}"></home>
+
+
+
+
+
+
+
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="home">
+    <view class="{{PageCur=='index'?'text-green':'text-gray'}}">主页</view>
+  </view>
+  <!--
+<view class="action" bindtap="NavChange" data-cur="fix"> 
+    <view class="{{PageCur=='fix'?'text-green':'text-gray'}}" wx:if="{{false}}">报修</view>
+  </view>
+  -->
+  
+  <view class="action" bindtap="NavChange" data-cur="info">
+    <view class="{{PageCur=='info'?'text-green':'text-gray'}}">更多操作</view>
+  </view>
+</view>
+
+<view >
+
+</view>
+

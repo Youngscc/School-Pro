@@ -1,0 +1,19 @@
+<!--pages/a/event2/event2.wxml-->
+<cu-custom bgColor="bg-gradual-blue"  isBack="{{true}}">
+  <view slot="content">查看维修记录</view>
+  <view slot="backText">返回</view>
+</cu-custom>
+
+<view class="padding text-center" wx:for="{{item}}" wx:for-item="h">
+  <view class="padding-lr bg-white">
+    <view class="solid-bottom padding">
+    <text class="solid-bottom text-df padding">设备id：{{h.equipment_id}}</text>
+    <text class="solid-bottom text-df padding">报修人id：{{h.user_id_stu}}</text>
+    <text class="solid-bottom text-df padding">维修人id：{{h.user_id_pro}}</text>
+    <text class="solid-bottom text-df padding">报修时间：{{h.start_time}}</text>
+    <text class="solid-bottom text-df padding">维修时间：{{h.end_time}}</text>
+    <text class="solid-bottom text-df padding">报修信息：{{h.text_stu}}</text>
+    <text class="solid-bottom text-df padding">维修备注：{{h.text_pro}}</text>
+    </view>
+  </view>
+</view>

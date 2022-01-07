@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "login": "/pages/login/login",
+    "home": "/pages/home/home",
+    "info": "/pages/info/info",
+    "stu": "/pages/stu/stu",
+    "pro": "/pages/pro/pro",
+    "admin": "/pages/admin/admin"
+  }
+} 

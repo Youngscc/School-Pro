@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/home/home",
+    "pages/seek/seek",
+    "pages/award/award",
+    "pages/info/info",
+    "pages/stu/stu",
+    "pages/pro/pro",
+    "pages/admin/admin",
+    "pages/myHistory/myHistory",
+    "pages/submit/submit",
+    "pages/contact/contact",
+    "pages/p/history/history",
+    "pages/p/maintain/maintain",
+    "pages/a/userManage/userManage",
+    "pages/a/eqManage/eqManage",
+    "pages/a/examine/examine",
+    "pages/a/event1/event1",
+    "pages/a/event2/event2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

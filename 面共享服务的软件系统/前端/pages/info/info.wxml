@@ -1,0 +1,2 @@
+<!--pages/info/info.wxml-->
+<stu wx:if="{{identity==1}}"></stu>

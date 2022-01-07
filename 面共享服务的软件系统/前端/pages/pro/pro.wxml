@@ -1,0 +1,18 @@
+<!--pages/pro/pro.wxml-->
+<cu-custom bgColor="bg-gradual-blue" >
+  <view slot="content">更多操作</view>
+</cu-custom>
+
+<view class='nav-list'>
+    <navigator open-type="navigate" hover-class='none' url="/pages/p/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      
+      <view class="solid-bottom text-xxl padding" bindtap="Change">
+        <text>{{item.title}}</text>
+      </view>
+      
+    </navigator>
+</view>
+
+<view class="padding flex flex-direction">
+  <button class="cu-btn bg-grey lg" bindtap="onClick">注销</button>
+</view>
