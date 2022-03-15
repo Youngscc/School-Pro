@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1576991078 source:c:\users\17867\desktop\aa\main.c
+	<windows.h>
+	<conio.h>
+	<stdio.h>
+	<math.h>
+	<time.h>
+	<windows.h>
+	<mmsystem.h>
+

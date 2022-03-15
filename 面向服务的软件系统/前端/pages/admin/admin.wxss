@@ -1,0 +1,3 @@
+/* pages/admin/admin.wxss */
+@import "../../colorui/main.wxss";
+@import "../../colorui/icon.wxss";

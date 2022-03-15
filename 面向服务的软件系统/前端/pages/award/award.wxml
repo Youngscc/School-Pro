@@ -1,0 +1,7 @@
+<!--pages/award/award.wxml-->
+<text>pages/award/award.wxml</text>
+
+<cu-custom bgColor="bg-gradual-blue"  isBack="{{true}}">
+  <view slot="content">换奖品</view>
+  <view slot="backText">返回</view>
+</cu-custom>
