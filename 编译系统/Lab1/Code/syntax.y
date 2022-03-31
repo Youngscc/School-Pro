@@ -236,7 +236,7 @@ Stmt:Exp SEMI{
 }| Exp error {
     Err = 1;
     if (lastErrLineno != yylineno)
-        printError('B', "syntax error, missing \";\"");
+        printError('B', "Missing \";\"");
 }
 
 DefList: {
