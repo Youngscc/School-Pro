@@ -24,6 +24,7 @@ struct FUN_ {
     FieldList argv;
     Type return_type;
     int declaration;
+    int definition;
 };
 
 struct FieldList_ {
@@ -43,8 +44,10 @@ struct TABLE_ {
 unsigned int hash_pjw(char* name);
 TABLE search(char* name);
 void insert(FieldList f,int line,int is_def);
+int funcmp (FUN a, FUN b);
 int fieldcmp(FieldList a,FieldList b);
 int typecmp(Type a,Type b);
+int funccmp(FieldList funca, FieldList funcb);
 Type search_define_struct(Type type,struct Node* now);
 
 void Program(struct Node* now);

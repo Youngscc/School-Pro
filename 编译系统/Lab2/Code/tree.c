@@ -5,7 +5,7 @@
 
 struct Node* head = NULL;
 
-struct Node* create_Node(struct Node* ch,char* name,int line) {
+struct Node* create_Node(struct Node* ch,char* name, int line) {
     struct Node* newnode=(struct Node*)malloc(sizeof(struct Node));
     newnode->judge=1;
     newnode->child=ch;

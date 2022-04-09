@@ -55,18 +55,36 @@ int fieldcmp(FieldList a,FieldList b){
     return 0;
 }
 
+int funcmp (FUN a, FUN b) {
+    if (a -> argc != b -> argc) return 1;
+    if (fieldcmp (a -> argv, b -> argv)) return 1;
+    if (typecmp (a -> return_type, b->return_type)) return 1;
+    return 0;
+}
+
 int typecmp(Type a,Type b) {
     if (a == NULL && b == NULL) return 0;
     if (a == NULL || b == NULL) return 1;
     if (a -> kind == BASIC && b->kind == BASIC) {
-        if (a->u.basic == b->u.basic) return 0;
+        if (a -> u.basic == b -> u.basic) return 0;
         else return 1;
-    } else if (a->kind == ARRAY && b->kind == ARRAY) {
-        return typecmp(a->u.array.elem, b->u.array.elem);
-    } else if (a->kind == STRUCTURE && b->kind == STRUCTURE) {
-        return fieldcmp(a->u.structure,b->u.structure);
+    } else if (a -> kind == ARRAY && b -> kind == ARRAY) {
+        return typecmp(a -> u.array.elem, b -> u.array.elem);
+    } else if (a -> kind == STRUCTURE && b -> kind == STRUCTURE) {
+        return fieldcmp(a -> u.structure,b -> u.structure);
+    } else if (a -> kind == FUNCTION && b -> kind == FUNCTION) {
+        return funcmp(a -> u.function, b -> u.function);
     }
     return 1;
+}
+
+int funccmp(FieldList funca, FieldList funcb){
+    if (funca == NULL && funcb == NULL) return 0;
+    if (funca == NULL || funcb == NULL) return 1;
+    // if (strcmp(funca->name,funcb->name) != 0) return 1;
+    if (typecmp(funca -> type, funcb -> type) != 0) return 1;
+    if (funccmp(funca -> tail, funcb -> tail) != 0) return 1;
+    return 0;
 }
 
 Type search_define_struct(Type type,struct Node* now) {
@@ -78,10 +96,17 @@ Type search_define_struct(Type type,struct Node* now) {
     return NULL;
 }
 
+int search_param_function (FieldList func, struct Node* now) {
+    if (now == NULL) return func != NULL;
+    FieldList arg = Args(now);
+    if (funccmp(arg, func) == 0) return 0;
+    return 1;
+}
+
 void Program(struct Node* now){
     // Program -> ExtDefList   
     // ExtDefList -> ExtDef ExtDefList | 
-    printf("Program\n");
+    // printf("Program\n");
     for(int i=0; i<16384; i++) table[i] = NULL;
     struct Node* child = now -> child;
     while (child -> child != NULL) {
@@ -89,6 +114,16 @@ void Program(struct Node* now){
        ExtDef(extdef);
        child = extdef -> brother;
     }
+    for(int i=0; i<16384; i++){
+        TABLE it = table[i];
+        while (it != NULL) {
+            FieldList rem = it -> field;
+            if (rem -> type -> kind == FUNCTION && rem -> type -> u.function -> definition == 0){
+                printf("Error type 18 at Line %d: Undefined function \"%s\".\n",it -> linenumber, rem->name);
+            }
+            it = it -> next;
+        }
+   }
 }
 
 void ExtDef(struct Node* now) {
@@ -98,37 +133,34 @@ void ExtDef(struct Node* now) {
     | Specifier FunDec CompSt
     | Specifier FunDec SEMI //add for 2.1
     */
-   printf("ExtDef\n");
-   struct Node* child = now -> child;
-   struct Node* bro = child -> brother;
-   struct Node* ano_bro = bro -> brother;
-   printf("%s\n", child -> index);
-   printf("%s\n", bro -> index);
-   Type type = Specifier(child);
-   if (ano_bro == NULL) {
-       // Specifier SEMI
-       printf("a\n");
-       return;
-   } else if (strcmp(bro -> index, "ExtDecList\0") == 0) {
-       //Specifier ExtDecList SEMI
-       printf("b\n");
-       ExtDecList(bro, type);
-   } else if (strcmp(ano_bro -> index, "CompSt\0") == 0) {
-       //Specifier FunDec CompSt
-       FunDec(bro, type, 1);
-       printf("c\n");
-       CompSt(ano_bro, type);
-   } else {
-       //Specifier FunDec SEMI
-       printf("d\n");
-       FunDec(bro, type, 0);
-   }
+//    printf("ExtDef\n");
+    struct Node* child = now -> child;
+    struct Node* bro = child -> brother;
+    struct Node* ano_bro = bro -> brother;
+//    printf("%s\n", child -> index);
+//    printf("%s\n", bro -> index);
+    Type type = Specifier(child);
+    if (type == NULL) return;
+    if (ano_bro == NULL) {
+        // Specifier SEMI
+        return;
+    } else if (strcmp(bro -> index, "ExtDecList\0") == 0) {
+        //Specifier ExtDecList SEMI
+        ExtDecList(bro, type);
+    } else if (strcmp(ano_bro -> index, "CompSt\0") == 0) {
+        //Specifier FunDec CompSt
+        FunDec(bro, type, 1);
+        CompSt(ano_bro, type);
+    } else {
+        //Specifier FunDec SEMI
+        FunDec(bro, type, 0);
+    }
    
 }
 
 Type Specifier (struct Node* now) {
     // Specifier -> TYPE | StructSpecifier
-    printf("Specifier\n");
+    // printf("Specifier\n");
     struct Node* child = now -> child;
     if (strcmp(child -> index, "TYPE\0") == 0) {
         Type ret = (Type) malloc (sizeof(struct Type_));
@@ -144,6 +176,7 @@ Type Specifier (struct Node* now) {
 
 Type StructSpecifier(struct Node* now) {
     // StructSpecifier -> STRUCT OptTag LC DefList RC | STRUCT Tag
+    // printf("StructSpecifier\n");
     struct Node* child = now -> child;
     struct Node* bro = child -> brother;
     struct Node* ano_bro = bro -> brother;
@@ -170,7 +203,7 @@ Type StructSpecifier(struct Node* now) {
         else{
             TABLE f = search (bro -> child -> char_name);
             if (f != NULL) {
-                printf("Error type 16 at Line %d: Duplicated name \"%s\".\n",child->linenumber, bro -> child -> char_name);
+                printf("Error type 16 at Line %d: Duplicated name \"%s\".\n", now -> linenumber, bro -> child -> char_name);
                 return NULL;
             }
             struct_field -> name = bro -> child -> char_name;
@@ -186,7 +219,7 @@ Type StructSpecifier(struct Node* now) {
 
 FieldList DefList(struct Node* now, int judge) {
     // DefList -> Def DefList | 
-    printf("DefList\n");
+    // printf("DefList\n");
     struct Node* child = now -> child;
     FieldList ret = NULL;
     FieldList p = NULL;
@@ -204,10 +237,11 @@ FieldList DefList(struct Node* now, int judge) {
 
 FieldList Def(struct Node* now, int judge) {
     // Def -> Specifier DecList SEMI
-    printf("Def\n");
+    // printf("Def\n");
     struct Node* child = now -> child;
     struct Node* bro = child -> brother;
     Type type = Specifier(child);
+    if (type == NULL) return NULL;
     return DecList(bro, type, judge);
 }
 
@@ -251,7 +285,7 @@ FieldList VarDec(struct Node* now, Type type, int judge) {
         if (judge == 3) return ret;
         TABLE f = search(child -> char_name);
         if(judge == 0 && f != NULL){
-            printf("Error type 15 at Line %d: Redefined structure's domain \"%s\".\n",now->linenumber,child->char_name);
+            printf("Error type 15 at Line %d: Redefined field \"%s\".\n",now->linenumber,child->char_name);
             return NULL;
         } else if (f != NULL) {
             printf("Error type 3 at Line %d: Redefined variable \"%s\".\n",now->linenumber,child->char_name);
@@ -271,7 +305,7 @@ FieldList VarDec(struct Node* now, Type type, int judge) {
 
 void ExtDecList(struct Node* now, Type type) {
     // ExtDecList -> VarDec | VarDec COMMA ExtDecList
-    printf("ExtDecList\n");
+    // printf("ExtDecList\n");
     struct Node* child = now -> child;
     struct Node* bro = child -> brother;
     VarDec(child, type, 1);
@@ -296,8 +330,23 @@ void FunDec(struct Node* now, Type type, int judge) {
         func_inf -> argv = VarList(child -> brother -> brother, judge);
     TABLE find_func = search(func -> name);
     if (find_func == NULL) {
-        func_inf -> declaration++;
+        if (judge == 0) func_inf -> declaration++;
+        else func -> type -> u.function -> definition++;
         insert(func, now->linenumber, 1);
+    } else {
+        int is_conflict = fieldcmp(find_func -> field, func);
+        if (is_conflict == 0){
+            if (judge != 0 && func -> type -> u.function ->  definition!=0){
+                printf("Error type 4 at Line %d: Redefined function \"%s\".\n",now->linenumber,func->name);
+                return;
+            }
+            if (judge != 0) func -> type -> u.function -> declaration++;
+            else func -> type -> u.function -> definition++;
+        }
+        else{
+            printf("Error type 4 at Line %d: Redefined function \"%s\".\n",now->linenumber,func->name);
+            return;
+        } 
     }
     return;
 }
@@ -325,7 +374,7 @@ FieldList ParamDec(struct Node* now, int judge) {
 
 void CompSt(struct Node* now, Type type) {
     // CompSt -> LC DefList StmtList RC
-    printf("CompSt\n");
+    // printf("CompSt\n");
     struct Node* deflist = now -> child -> brother;
     struct Node* stmtlist = deflist -> brother;
     DefList(deflist, 1);
@@ -342,6 +391,7 @@ void StmtList(struct Node* now, Type type) {
 }
 
 void Stmt(struct Node* now, Type type) {
+    // printf("Stmt\n");
     struct Node* child = now->child;
     // Stmt -> Exp SEMI
     if (strcmp(child -> index, "Exp\0") == 0) Exp(child);
@@ -373,8 +423,9 @@ void Stmt(struct Node* now, Type type) {
 }
 
 Type Exp(struct Node* now) {
-    struct Node* child = now->child;
-    struct Node* bro = child->brother;
+    struct Node* child = now -> child;
+    struct Node* bro = child -> brother;
+    // printf("Exp\n");
     if (bro == NULL) {
         if (strcmp(child -> index, "INT\0") == 0) {
             // Exp -> INT
@@ -441,7 +492,7 @@ Type Exp(struct Node* now) {
         //Exp -> Exp AND Exp | Exp OR Exp
         Type l_type = Exp(child);
         Type r_type = Exp(ano_bro);
-        if (l_type == NULL && r_type == NULL) return NULL;
+        if (l_type == NULL || r_type == NULL) return NULL;
         if (typecmp(l_type, r_type) == 0 && l_type->kind == BASIC && l_type->u.basic == 0) return r_type;
         else {
             printf("Error type 7 at Line %d: Type mismatched for operands.\n",now->linenumber);
@@ -453,6 +504,7 @@ Type Exp(struct Node* now) {
         // Exp -> Exp RELOP Exp
         Type l_type = Exp(child);
         Type r_type = Exp(ano_bro);
+        if (l_type == NULL || r_type == NULL) return NULL;
         if (typecmp(l_type, r_type) == 0) return r_type;
         else {
             printf("Error type 7 at Line %d: Type mismatched for operands.\n",now->linenumber);
@@ -465,6 +517,7 @@ Type Exp(struct Node* now) {
         // Exp -> Exp PLUS Exp
         Type l_type = Exp(child);
         Type r_type = Exp(ano_bro);
+        if (l_type == NULL || r_type == NULL) return NULL;
         if (typecmp(l_type, r_type) == 0 && l_type != NULL && l_type->kind == BASIC) return r_type;
         else {
             printf("Error type 7 at Line %d: Type mismatched for operands.\n",now->linenumber);
@@ -493,7 +546,7 @@ Type Exp(struct Node* now) {
         Type ret = Exp(child);
         if (ret == NULL) return NULL;
         if (ret -> kind != ARRAY) {
-            printf("Error type 10 at Line %d: Not array.\n",child->linenumber);
+            printf("Error type 10 at Line %d: \"%s\" is not an array.\n",child->linenumber,child -> child -> char_name);
             return NULL;
         }
         Type now_size = Exp (ano_bro);
@@ -501,7 +554,7 @@ Type Exp(struct Node* now) {
         if (now_size -> kind == BASIC && now_size -> u.basic == 0)
             return ret -> u.array.elem;
         else {
-            printf("Error type 12 at Line %d: Not integer.\n",child->linenumber);
+            printf("Error type 12 at Line %d: \"%f\" is not integer.\n",child->linenumber, ano_bro->child->float_number);
             return NULL;
         }
     }
@@ -509,16 +562,25 @@ Type Exp(struct Node* now) {
         // Exp -> LP Exp RP
         return Exp(bro);
     }
-    if (strcmp(ano_bro->index,"Args\0") == 0 || strcmp(ano_bro->index, "RP\0") == 0) {
+    if (strcmp(bro->index,"LP\0") == 0) {
         // Exp -> ID LP Args RP
         // Exp -> ID LP RP
         TABLE res = search(child -> char_name);
+        // printf("%s --- \n",res -> field -> type -> u.function -> argv -> name);
         if (res == NULL || res -> is_def_struct == 0) {
             printf("Error type 2 at Line %d: Undefined function \"%s\".\n",now->linenumber,child->char_name);
             return NULL;
         }
         if (res -> field -> type -> kind != FUNCTION) {
-            printf("Error type 11 at Line %d: Not a function.\n",now->linenumber);
+            printf("Error type 11 at Line %d: \"%s\" is not a function.\n",now->linenumber,child -> char_name);
+            return NULL;
+        }
+        int judge = 0;
+        // printf("%s -- \n",ano_bro -> index);
+        if (ano_bro -> brother == NULL) judge = search_param_function(res -> field, NULL);
+        else judge = search_param_function(res -> field, ano_bro);
+        if (judge != 0) {
+            printf("Error type 9 at Line %d: Wrong arguments for function \"%s\".\n",now->linenumber,res -> field -> name);
             return NULL;
         }
         return res -> field -> type -> u.function -> return_type;
@@ -526,8 +588,10 @@ Type Exp(struct Node* now) {
 }
 
 FieldList Args(struct Node* now) {
-    struct Node* child = now->child;
-    struct Node* bro = now->brother;
+    // Args -> Exp COMMA Args | Exp
+    // printf("Args\n");
+    struct Node* child = now -> child;
+    struct Node* bro = child -> brother;
     FieldList exp_field=(FieldList)malloc(sizeof(struct FieldList_));
     exp_field->type = Exp(child);
     if (bro != NULL) exp_field->tail = Args(bro -> brother);

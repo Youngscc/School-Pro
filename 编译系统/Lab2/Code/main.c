@@ -24,8 +24,7 @@ int main(int argc, char** argv) {
     yylineno=1;
     yyrestart(f);
     yyparse();
-    print_tree(head, 0);
+    // print_tree(head, 0);
     if (Err == 0) Program(head);
-    // for (int i=0; i<16385; ++i) if (table[i] != NULL) printf("%s\n",table[i] -> field -> name); 
     return 0;
 }

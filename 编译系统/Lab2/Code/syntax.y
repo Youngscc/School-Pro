@@ -94,6 +94,10 @@ ExtDef:Specifier ExtDecList SEMI{
     Err = 1;
     if (lastErrLineno != yylineno)
         printError('B', "Missing \";\"");
+}|Specifier FunDec SEMI{
+    $$=create_Node($1,"ExtDef\0",@1.first_line);
+    $1->brother=$2;
+    $2->brother=$3;
 }
 
 ExtDecList:VarDec{
