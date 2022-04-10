@@ -1,0 +1,26 @@
+\paragraph{1.3}~{}
+\begin{algorithm}[H]  
+    \caption{判断多项式乘积相等}  
+    \begin{algorithmic}[1]
+        \Require 阶数$m,n,l$和多项式$p(x),q(x),r(x)$
+        \Ensure 如果满足$p(x)q(x)=r(x)$，输出True，否则以一定的概率输出False。
+        \State $T \leftarrow 2l$
+        \If {$m+n \ne l$} \\
+            \Return {False}
+        \EndIf
+        \For {$i=1 \rightarrow$ T}
+            在$[0,1000l]$均匀随机生成一个整数 $x$;
+            \If {$p(x)q(x) \ne r(x)$} \\
+                \Return {False}
+            \EndIf
+        \EndFor \\
+        \Return{True}
+    \end{algorithmic}
+\end{algorithm}  
+
+该算法时间复杂度为$O(l^2)$。
+
+两个不同的$l$阶多项式的交点最多有$l$个，设$A_{i}=1$表示第$i$个随机生成的数字为交点，$A_{i}=0$表示第$i$个随机生成的数字不为交点，因此$p(A_{i}=1)=\frac{l}{1000l}=\frac{1}{1000}$。
+结果正确的概率极即为$p=1-(\frac{1}{1000})^{2l}$。
+
+该算法属于蒙特卡洛算法。

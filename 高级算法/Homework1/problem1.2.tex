@@ -1,0 +1,19 @@
+\paragraph{1.2}~{}
+
+(1)
+对于服从标准正态分布的随机变量$X$有$$E(X)=0,Var(X)=1,E(X^2)=1$$则有
+$$E(X)=E(\sum_{i=1}^{n}r_i\cdot x_i) = \sum_{i=1}^{n} E(r_i)\cdot x_i=\sum_{i=1}^{n}0\cdot x_i=0$$
+同理 $$E(Y)=0$$
+由公式$$Var(X)=E(X^2)-E^2(X)$$有
+$$Var(X) = E((\sum_{i=1}^{n}r_i\cdot x_i)^2)=E(\sum_{i=1}^{n}\sum_{j=1}^{n}r_ir_jx_ix_j)=\sum_{i=1}^{n}\sum_{j=1}^{n}E(r_ir_j)x_ix_j$$
+$$=\sum_{i=1}^{n}\sum_{j=1}^{n}[i \ne j]E(r_i)E(r_j)x_ix_j+\sum_{i=1}^{n}E({r_i}^2){x_i}^2=\sum_{i=1}^{n}E({r_i}^2){x_i}^2=\sum_{i=1}^{n}{x_i}^2=1$$
+同理$$Var(Y)=1$$
+(2)
+$$Var(X)=E(X^2)-{E(X)}^2=E(X^2)-0=E(X^2)=1$$
+同理$$E(Y^2)=1$$
+由Cauchy-Schwartz不等式可知
+$$E^2(XY) \le E(X^2)*E(Y^2) = 1$$
+$$-1\le E(XY) \le 1$$
+故有
+$$E((X-Y)^2)=E(X^2)+E(Y^2)-2E(XY)=2-2E(XY)$$
+$$0 \le E((X-Y)^2) \le 4$$

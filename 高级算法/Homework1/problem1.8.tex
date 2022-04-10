@@ -1,0 +1,21 @@
+\paragraph{1.8}~{}
+
+\begin{algorithm}[H]  
+    \caption{求$F(z)$}  
+    \begin{algorithmic}[1]
+        \Require 整数$z(0 \le z \le n-1)$
+        \Ensure 以大于$\frac{1}{2}$正确的概率输出$F(Z)$
+        \State 等概率在$[0,n-1]$中生成整数$x$
+        \State $y \leftarrow (z-x+n)mod \; n$
+        \Return{$(F(x)+F(y)) mod \; m$}
+    \end{algorithmic}
+\end{algorithm}
+
+对于每个数字被篡改的概率为$\frac{1}{5}$
+
+设$r[i]$表示$F(i)$正确，则
+$$p(r[i])=\frac{4}{5}$$
+$$p(r[x] \land r[y]) \le \frac{16}{25} \le \frac{1}{2}$$
+
+当运行三次后，返回出现次数较多的结果，此时
+$$p(Right) \ge C_3^2(1-\frac{16}{25})\frac{16}{25}^2+C_3^3\frac{16}{25}^3=0.704512$$

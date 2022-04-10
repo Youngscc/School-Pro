@@ -1,0 +1,45 @@
+\paragraph{1.2}~{}
+
+(1)
+属于舍伍德算法。
+
+(2)
+每次考虑$S'$是$S$的子集，那么显然$|S'|<|S|<n$，则$\exists b<1:|S'|=bn$。
+证毕。
+
+(3)
+定义$S_{(i)}$为$S$中阶为$i$的元素，$X_{i,j}$为$S_{(i)}$和$S_{(j)}$比较的次数，显然有$0 \le X_{ij} \le 1$。则算法的比较次数为$\sum_{i=1}^{n} \sum_{j>i} X_{i,j}$。
+那么易得算法的平均复杂性为$$E[\sum_{i=1}^{n} \sum_{j>i} X_{i,j}]=\sum_{i=1}^{n} \sum_{j>i} E[X_{i,j}]$$
+而$$E[X_{ij}]=p_{ij}\times 1+(1-p_{i,j}) \times 0=p_{ij}$$
+所以我们考虑求得$p_{ij}$。
+分类讨论如下：
+\begin{enumerate}[1)]
+\item 当$i<k<j$时，令$A$为随机事件$X_{ij}=1$，$B$为随机事件算法首次选中$S_{(i)~(j)}$中元素作为划分元素。
+$B$事件必然发生，因为至少会选择一次$S_{(k)}$作为划分元素。则有
+$$p(A|B)=\frac{2}{j-i+1}$$
+$$p(A)=\sum_{\alpha}p(A|B_{\alpha})p(B_{\alpha})=\frac{2}{j-i+1}$$
+\item 当$k \le i<j$时，令$A$为随机事件$X_{ij}=1$，$B$为随机事件算法首次选中$S_{(k)~(j)}$中元素作为划分元素。
+$B$事件必然发生，因为至少会选择一次$S_{(k)}$作为划分元素。则有
+$$p(A|B)=\frac{2}{j-k+1}$$
+$$p(A)=\sum_{\alpha}p(A|B_{\alpha})p(B_{\alpha})=\frac{2}{j-k+1}$$
+\item 当$i<j\le k$时，令$A$为随机事件$X_{ij}=1$，$B$为随机事件算法首次选中$S_{(i)~(k)}$中元素作为划分元素。
+$B$事件必然发生，因为至少会选择一次$S_{(k)}$作为划分元素。则有
+$$p(A|B)=\frac{2}{k-i+1}$$
+$$p(A)=\sum_{\alpha}p(A|B_{\alpha})p(B_{\alpha})=\frac{2}{k-i+1}$$
+\end{enumerate}
+则有
+\begin{align}  
+    E[T(n)] &= \sum_{i=1}^{n}\sum_{j>i}E[X_{ij}] \nonumber\\
+    &= \sum_{i=1}^{k-1}\sum_{i<j\le k}\frac{2}{k-i+1} +\sum_{j=k+1}^{n}\sum_{k\le i<j}\frac{2}{j-k+1}+\sum_{i=1}^{k-1}\sum_{j=k+1}^{n}\frac{2}{j-i+1} \nonumber\\
+    &= 2\sum_{i=1}^{k-1}\frac{k-i}{k-i+1} + 2\sum_{j=k+1}^{n} \frac{j-k}{j-k+1} +\sum_{i=1}^{k-1}\sum_{j=k-i+1}^{n-i} \frac{2}{j+1} \nonumber\\
+    &= 2\sum_{i=1}^{k-1} (1-\frac{1}{i+1}) + 2\sum_{j=1}^{n-k} (1-\frac{1}{j+1}) +\sum_{i=1}^{k-1}\sum_{j=k-i+1}^{n-i}\frac{2}{j+1} \nonumber\\
+    &= 2n-O(log(k))-O(log(n-k)) + \sum_{i=1}^{k-1}\sum_{j=k-i+1}^{n-i} \frac{2}{j+1} \nonumber
+\end{align}  
+\begin{align}
+    \sum_{i=1}^{k-1}\sum_{j=k-i+1}^{n-i} \frac{2}{j+1} &= 2(\sum_{i=1}{n}\sum_{j=2}^{n-i} \frac{1}{j} - \sum_{i=1}{k} \sum_{j=2}^{k-i} \frac{1}{j} - \sum_{i=1}{n-k} \sum_{j=2}^{n-k-i}\frac{1}{j}) \nonumber\\
+    &= O(n\, log(n))-O(k\, log(k))-O((n-k)\, log(n-k)) \nonumber\\
+    &= O(n\, log(\frac{n}{n-k}))-O(k\, log(\frac{k}{n-k})) \nonumber\\
+    &\approx O(n) \nonumber
+\end{align}
+
+综上 $$E(T(n)) = O(n)$$

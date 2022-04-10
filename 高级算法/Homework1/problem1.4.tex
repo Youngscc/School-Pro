@@ -1,0 +1,35 @@
+\paragraph{1.4}~{}
+\begin{algorithm}[H]  
+    \caption{判断矩阵乘积相等}  
+    \begin{algorithmic}[1]
+        \Require 阶数$p,q,r$和矩阵$A,B,C$
+        \Ensure 如果满足$A \times B = C$，输出True，否则以一定的概率输出False。
+        \State $N \leftarrow max{p,q,r}$
+        \State $T \leftarrow 2N$
+        \For {$i=1 \rightarrow$ T}
+            等概率抽取$v \in {0,1}^r$;
+            \If {$A(Bv) \ne Cv$} \\
+                \Return {False}
+            \EndIf
+        \EndFor \\
+        \Return{True}
+    \end{algorithmic}
+\end{algorithm}  
+
+算法时间复杂度为 $O(max(p,q,r)^3)$。
+
+当结果错误时，只有一种情况，即$AB \ne C$但是$ABv=Cv$，记作事件$\alpha$。
+
+设$D=AB-C$，当$\alpha$发生时显然有$D \ne 0, Dv = 0$。
+
+设$D_i$为$D$的一个行向量，且$D_i \ne 0, D_iv = 0$。
+
+$$D_i \times v = \sum_{j=1}^{r}D_{i,j}v_j = 0$$
+由$D_i \ne 0$ 可知 $\exists j: \; D_{i,j} \ne 0$
+则有
+$$v_j=- \frac{\sum_{k=1 \land k \ne j}^{r}D_{i,k}v_k}{D_{i,j}}$$
+即$v$有$n-1$个自由基，$\alpha$这种情况下的$v$只有$2^{r-1}$个，而我们随机生成的$v$可能有$2^n$个，故有
+$$p(\alpha) = \frac{2^{r-1}}{2^r}=\frac{1}{2}$$
+也就是说当返回False时百分百正确，当返回true时正确概率为$\frac{1}{2}$。当我们独立重复$k$次后，得到正确解的概率即为$1-\frac{1}{2^k}$。
+
+算法类别为蒙特卡洛算法。
