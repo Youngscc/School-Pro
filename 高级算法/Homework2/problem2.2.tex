@@ -1,0 +1,33 @@
+\paragraph{2.2}~{}
+
+$\bullet$ 首先证明$X_{ij}$两两独立：
+
+任取$i,j,k,l$且满足$i<j,k<l$，需要证明$Pr(X_{ij}=x_1 \cap X_{kl}=x_2) = Pr(X_{ij}=x_1) \times Pr(X_{kl}=x_2) (x_1,x_2 \in {0,1}) $
+
+当$i,j,k,l$互不相同时，该等式显然成立。
+
+当$i,j,k,l$并不互不相同时，不妨设$i=k$，即证明$Pr(X_{ij}=x_1 \cap X_{il}=x_2) = Pr(X_{ij}=x_1) \times Pr(X_{il}=x_2) (x_1,x_2 \in {0,1})$
+
+显然有$$(\forall i,j): Pr(X_{ij}=0) = Pr(X_{ij}=1) = \frac{1}{2}$$
+
+枚举$x_1,x_2$的取值有：
+$$
+\begin{aligned}
+Pr(X_{ij}=0 \cap X_{il}=0) &= Pr(X_i=1 \cap X_j=0 \cap X_l=0) + Pr(X_i=0 \cap X_j=1 \cap X_l=1) \\
+ &= \frac{1}{8}+\frac{1}{8} = \frac{1}{4} = Pr(X_{ij}=0) \times Pr(X_{il}=0)\\
+Pr(X_{ij}=0 \cap X_{il}=1) &= Pr(X_i=1 \cap X_j=0 \cap X_l=1) + Pr(X_i=0 \cap X_j=1 \cap X_l=0) \\
+ &= \frac{1}{8}+\frac{1}{8} = \frac{1}{4} = Pr(X_{ij}=0) \times Pr(X_{il}=1)\\
+Pr(X_{ij}=1 \cap X_{il}=0) &= Pr(X_i=1 \cap X_j=1 \cap X_l=0) + Pr(X_i=0 \cap X_j=0 \cap X_l=1)\\
+ &= \frac{1}{8}+\frac{1}{8} = \frac{1}{4} = Pr(X_{ij}=1) \times Pr(X_{il}=0)\\
+Pr(X_{ij}=1 \cap X_{il}=1) &= Pr(X_i=1 \cap X_j=1 \cap X_l=1) + Pr(X_i=0 \cap X_j=0 \cap X_l=0)\\
+ &= \frac{1}{8}+\frac{1}{8} = \frac{1}{4} = Pr(X_{ij}=1) \times Pr(X_{il}=1)\\
+\end{aligned}
+$$
+
+故$Pr(X_{ij}=x_1 \cap X_{kl}=x_2) = Pr(X_{ij}=x_1 (x_1,x_2 \in {0,1})) \times Pr(X_{kl}=x_2)$，则$X_{ij}$两两独立。
+
+$\bullet$ 然后证明$X_{ij}$不相互独立：
+
+取$1 \le i < j < k \le n$，显然$$Pr(X_{ij}=0 \cap X_{jk}=0 \cap X_{jk}=0) = 0$$
+但$$Pr(X_{ij}=0) \times Pr(X_{jk}=0) \times Pr(X_{ik}) = \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} = \frac{1}{8} \ne 0$$
+故$X_{ij}$不相互独立。

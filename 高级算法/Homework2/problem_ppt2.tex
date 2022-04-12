@@ -1,0 +1,30 @@
+\paragraph{2.ppt2}~{}
+\subparagraph{随机投掷计算$\pi$}
+
+假设投掷$n$次，共有$k$个落入圆中，则落入圆中的概率$p$为
+$$
+p = \frac{k}{n} \approx \frac{\pi r^2}{4r^2} = \frac{\pi}{4}
+$$
+$$
+\pi = \frac{4k}{n}
+$$
+现在我们估计$Pr(\pi \notin [\frac{4k}{n}-\delta,\frac{4k}{n}+\delta])$
+$$
+\begin{aligned}
+    Pr(\pi \notin [\frac{4k}{n}-\delta,\frac{4k}{n}+\delta]) 
+   &= Pr[p < \frac{k}{n}-\frac{\delta}{4}] + Pr[p>\frac{k}{n}+\frac{\delta}{4}] \\ 
+   &= Pr[np < k-\frac{\delta n}{4}] + Pr[np>k+\frac{\delta n}{4}] \\ 
+   &= Pr[E(k) < k-\frac{\delta n}{4}] + Pr[E(k)>k+\frac{\delta n}{4}] \\ 
+   &= Pr[k > E(k)+\frac{\delta n}{4}] + Pr[k < E(k)-\frac{\delta n}{4}] \\ 
+   &= Pr[k > E(k)(1+\frac{\delta}{4p})] + Pr[k < E(k)(1-\frac{\delta}{4p})] \\ 
+   &< exp(\frac{-E(k)(\frac{\delta}{4p})^2}{3}) + exp(\frac{-E(k)(\frac{\delta}{4p})^2}{2}) \\
+   &= exp(\frac{-np(\frac{\delta}{4p})^2}{3}) + exp(\frac{-np(\frac{\delta}{4p})^2}{2})\\
+   &\le exp(\frac{-n\delta^2}{48p}) + exp(\frac{-n\delta ^2}{32p})\\
+   &< exp(\frac{-n\delta^2}{48}) + exp(\frac{-n\delta ^2}{32})
+\end{aligned}
+$$
+则有
+$$
+Pr(\pi \in [\frac{4k}{n}-\delta,\frac{4k}{n}+\delta]) > 1 - exp(-n\frac{\delta^2}{48}) - exp(-n\frac{\delta ^2}{32})
+$$
+置信区间为$[\frac{4k}{n}-\delta,\frac{4k}{n}+\delta]$，置信度大于$1 - exp(-n\frac{\delta^2}{48}) - exp(-n\frac{\delta ^2}{32})$

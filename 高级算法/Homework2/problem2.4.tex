@@ -1,0 +1,14 @@
+\paragraph{2.4}~{}
+
+设事件$\epsilon$为两个身份证号重合
+$$
+\begin{aligned}
+    Pr(\epsilon) &= \prod_{k=0}^{m-1}{1-\frac{n}{k}}\\
+    &\approx \prod_{k=0}^{m-1}{e^{-\frac{k}{n}}}\\
+    &=exp(-\sum_{k=0}^{m-1}{\frac{k}{n}})\\
+    &=e^{-\frac{m(m-1)}{2n}}\\
+    &\approx e^{-\frac{m^2}{2n}}
+\end{aligned}
+$$
+令$Pr(\epsilon) > 99\%$ 并代入$n=10^k$ 得 $m \ge \sqrt{2ln(100)\times 10^k}$
+经过计算，当同地区同一天出生的人数不超过$96$人时$k=3$，经过计算，当同地区同一天出生的人数不超过$303$人时$k=4$，经过计算，当同地区同一天出生的人数不超过$960$人时$k=5$。

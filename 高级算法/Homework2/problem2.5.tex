@@ -1,0 +1,28 @@
+\paragraph{2.5}~{}
+
+(1)由于共有$2n$个存储位置的数组作为开放寻址散列表存储$n$个数据项，因此$h(x,i)$每次没有找到空位置的概率不超过$\frac{1}{2}$，
+因此探测$a$次的概率等于前$a-1$次未找到空位置，第$a$次找到的概率，即不超过$2^{-a}$。
+
+(2)由第一问可得$Pr(X_i=a) \le 2^{-a}$，将$a=2logn$代入得$Pr(X_i=2logn) \le \frac{1}{n^2}$，又由于对于任意正整数$x$，都有$Pr(X_i=x)>Pr(X_i=x+1)$。
+则$Pr(X_i \ge 2logn) \le \frac{1}{n^2}$，得证。
+
+(3)
+$$
+\begin{aligned}
+    Pr(X \ge 2logn) &= Pr(\bigcup_{i=1}^{n} X_i \ge 2logn)\\
+    &\le \sum_{i=1}^{n} Pr(X_i \ge 2logn)\\
+    &\le n*\frac{1}{n^2}\\
+    &= \frac{1}{n}\\
+\end{aligned}
+$$
+
+(4)
+$$
+\begin{aligned}
+    E(X) &= \sum_{i=1}^{n}P(X=i)\times i \\
+    &= Pr(x<2logn)E(X|X<2logn) + Pr(x>2logn)E(X|X\ge 2logn) \\
+    &\le 1 \times 2logn + \frac{1}{n} \times n\\ 
+    &= 2logn + 1\\
+    &= O(logn)
+\end{aligned}
+$$

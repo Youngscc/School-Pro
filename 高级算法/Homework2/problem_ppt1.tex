@@ -1,0 +1,12 @@
+\paragraph{2.ppt1}~{}
+
+设$\epsilon$为假阳性，假阳性是指$x \notin S$但$h(x)=h(x_i)$对某个$i$成立。
+
+$$
+\begin{aligned}
+    Pr[\epsilon] &= Pr[\bigcup_{i=1}^{m} h(x) = h(x_i)] \\
+    &= 1-Pr[\bigcap_{i=1}^{m} h(x) \ne h(x_i)]\\
+    &= 1-\prod_{i=1}^{m} Pr[h(x) \ne h(x_i)]\\
+    &= 1-(1-\frac{1}{C_b^k})^m
+\end{aligned}
+$$
