@@ -23,7 +23,6 @@ struct FUN_ {
     int argc;
     FieldList argv;
     Type return_type;
-    int declaration;
     int definition;
 };
 

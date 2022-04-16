@@ -137,8 +137,6 @@ void ExtDef(struct Node* now) {
     struct Node* child = now -> child;
     struct Node* bro = child -> brother;
     struct Node* ano_bro = bro -> brother;
-//    printf("%s\n", child -> index);
-//    printf("%s\n", bro -> index);
     Type type = Specifier(child);
     if (type == NULL) return;
     if (ano_bro == NULL) {
@@ -325,23 +323,20 @@ void FunDec(struct Node* now, Type type, int judge) {
     func_inf -> argv = NULL;
     func_inf -> return_type = type;
     func_inf -> argc = 0;
-    func_inf -> declaration = 0;
     if (child -> brother -> brother -> brother != NULL)
         func_inf -> argv = VarList(child -> brother -> brother, judge);
     TABLE find_func = search(func -> name);
     if (find_func == NULL) {
-        if (judge == 0) func_inf -> declaration++;
-        else func -> type -> u.function -> definition++;
+        if (judge) func -> type -> u.function -> definition++;
         insert(func, now->linenumber, 1);
     } else {
         int is_conflict = fieldcmp(find_func -> field, func);
         if (is_conflict == 0){
-            if (judge != 0 && func -> type -> u.function ->  definition!=0){
+            if (judge && func -> type -> u.function -> definition != 0){
                 printf("Error type 4 at Line %d: Redefined function \"%s\".\n",now->linenumber,func->name);
                 return;
             }
-            if (judge != 0) func -> type -> u.function -> declaration++;
-            else func -> type -> u.function -> definition++;
+            if (judge) find_func -> field -> type -> u.function -> definition++;
         }
         else{
             printf("Error type 4 at Line %d: Redefined function \"%s\".\n",now->linenumber,func->name);
@@ -353,7 +348,6 @@ void FunDec(struct Node* now, Type type, int judge) {
 
 FieldList VarList(struct Node* now,int judge) {
     // VarList -> ParamDec COMMA VarList | ParamDec
-
     struct Node* child = now -> child;
     struct Node* bro = child -> brother;
     FieldList ret = NULL;
@@ -481,8 +475,6 @@ Type Exp(struct Node* now) {
             printf("Error type 6 at Line %d: The left-hand side of an assignment must be a variable.\n",now->linenumber);
             return NULL;
         }
-        // printf("%d\n ", l_type -> kind);
-        // printf("%d\n ", r_type -> kind);
         if (typecmp(l_type, r_type) == 0) return r_type;
         printf("Error type 5 at Line %d: Type mismatched for assignment.\n",now->linenumber);
         return NULL;
@@ -566,7 +558,6 @@ Type Exp(struct Node* now) {
         // Exp -> ID LP Args RP
         // Exp -> ID LP RP
         TABLE res = search(child -> char_name);
-        // printf("%s --- \n",res -> field -> type -> u.function -> argv -> name);
         if (res == NULL || res -> is_def_struct == 0) {
             printf("Error type 2 at Line %d: Undefined function \"%s\".\n",now->linenumber,child->char_name);
             return NULL;
@@ -576,7 +567,6 @@ Type Exp(struct Node* now) {
             return NULL;
         }
         int judge = 0;
-        // printf("%s -- \n",ano_bro -> index);
         if (ano_bro -> brother == NULL) judge = search_param_function(res -> field, NULL);
         else judge = search_param_function(res -> field, ano_bro);
         if (judge != 0) {
