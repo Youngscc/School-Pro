@@ -1,0 +1,3 @@
+*.ans
+*.txt
+!mydata.txt
