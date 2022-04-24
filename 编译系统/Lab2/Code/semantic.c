@@ -558,7 +558,7 @@ Type Exp(struct Node* now) {
         // Exp -> ID LP Args RP
         // Exp -> ID LP RP
         TABLE res = search(child -> char_name);
-        if (res == NULL || res -> is_def_struct == 0) {
+        if (res == NULL || res -> field -> type -> u.function -> definition == 0) {
             printf("Error type 2 at Line %d: Undefined function \"%s\".\n",now->linenumber,child->char_name);
             return NULL;
         }
@@ -567,8 +567,8 @@ Type Exp(struct Node* now) {
             return NULL;
         }
         int judge = 0;
-        if (ano_bro -> brother == NULL) judge = search_param_function(res -> field, NULL);
-        else judge = search_param_function(res -> field, ano_bro);
+        if (ano_bro -> brother == NULL) judge = search_param_function(res -> field -> type -> u.function -> argv, NULL);
+        else judge = search_param_function(res -> field -> type -> u.function -> argv, ano_bro);
         if (judge != 0) {
             printf("Error type 9 at Line %d: Wrong arguments for function \"%s\".\n",now->linenumber,res -> field -> name);
             return NULL;
