@@ -1,2 +1,3 @@
-**/report.docx
-**/report.doc
+**/*.docx
+**/*.doc
+**/*.vsdx

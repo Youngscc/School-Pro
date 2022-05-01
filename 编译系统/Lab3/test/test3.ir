@@ -1,0 +1,19 @@
+FUNCTION add :
+PARAM t4
+t8 := t4 + #0
+t9 := t4 + #4
+LABEL label12 :
+LABEL label13 :
+t7 := t12 + t13
+RETURN t7
+FUNCTION main :
+DEC t6 8
+t17 := t6 + #0
+*t17 := #1
+t20 := t6 + #4
+*t20 := #2
+ARG &t6
+t22 := CALL add
+t5 := t22
+WRITE t5
+RETURN #0
