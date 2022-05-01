@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="central_widget">
+   <layout class="QVBoxLayout" name="widgetLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="Competition_tab">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>比 赛</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="CompetitionLayout">
+        <item>
+         <layout class="QHBoxLayout" name="competition_Layout">
+          <item>
+           <widget class="QPushButton" name="Competition_list">
+            <property name="text">
+             <string>比赛列表</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Competition_search">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>关键字查询比赛</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Competition_result">
+            <property name="text">
+             <string>查询比赛结果</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Competition_insert">
+            <property name="text">
+             <string>添加比赛</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Participate_in_insert">
+            <property name="text">
+             <string>添加比赛记录</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="Competition_table"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Team_tab">
+       <attribute name="title">
+        <string>队 伍</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="TeamLayout">
+        <item>
+         <layout class="QHBoxLayout" name="Team_Layout">
+          <item>
+           <widget class="QPushButton" name="Team_list">
+            <property name="text">
+             <string>队伍列表</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Team_search">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>关键字查询队伍</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Team_search_players">
+            <property name="text">
+             <string>查询队伍成员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Team_search_participate_in">
+            <property name="text">
+             <string>查询队伍荣誉</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Team_insert">
+            <property name="text">
+             <string>添加队伍</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="Team_table"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Players_tab">
+       <attribute name="title">
+        <string>选 手</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="Players_list">
+              <property name="text">
+               <string>选手列表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Players_search">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>关键字查询选手</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Players_info">
+              <property name="text">
+               <string>精准查询选手</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Players_participate_in">
+              <property name="text">
+               <string>查询选手荣誉</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Players_insert">
+              <property name="text">
+               <string>添加选手</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="Players_table"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Schools_tab">
+       <attribute name="title">
+        <string>学 校</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="SchoolsLayout">
+        <item>
+         <layout class="QHBoxLayout" name="School_Layout" stretch="0,0,0,0,0,0">
+          <property name="spacing">
+           <number>7</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="School_List">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>28</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>学校列表</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_search">
+            <property name="text">
+             <string>关键字查询学校</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_search_Players">
+            <property name="text">
+             <string>查询学校选手</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_search_Teams">
+            <property name="text">
+             <string>查询学校队伍</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_search_Competitions">
+            <property name="text">
+             <string>查询学校承办历史</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="School_insert">
+            <property name="text">
+             <string>添加学校</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="School_table"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actiondd">
+   <property name="text">
+    <string>dd</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
