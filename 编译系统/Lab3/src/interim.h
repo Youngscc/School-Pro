@@ -10,17 +10,14 @@ typedef struct InterCode_* InterCode;
 
 struct Operand_{
     enum{FROM_ARG,VARIABLE,TEMP,CONSTANT,ADDRESS,WADDRESS,FUNCTION,LABEL,RELOP}kind;
-    int u_int;//t1t2
+    int u_int;
     char* u_char;
     Type type;
 };
 
 struct InterCode_{
-    enum{ILABEL,IFUNCTION,ASSIGN,
-        ADD,SUB,MUL,DIV,
-        ADDRASS1,ADDRASS2,ADDRASS3,
-        GOTO,IF,RETURN,DEC,ARG,
-        CALL,PARAM,READ,WRITE}kind;
+    enum{ILABEL,IFUNCTION,ASSIGN,ADD,SUB,MUL,DIV,ADDRASS1,ADDRASS2,ADDRASS3,
+        GOTO,IF,RETURN,DEC,ARG,CALL,PARAM,READ,WRITE}kind;
     union{
         //LABEL,FUNCTION,GOTO,RETURN,ARG
         //PARAM,READ,WRITE

@@ -506,7 +506,6 @@ Type Exp(struct Node* now) {
 
     if (strcmp(bro -> index, "PLUS\0") == 0 || strcmp(bro -> index, "MINUS\0") == 0 ||
          strcmp(bro -> index, "STAR\0") == 0 || strcmp (bro -> index, "DIV\0") == 0) {
-        // Exp -> Exp PLUS Exp
         Type l_type = Exp(child);
         Type r_type = Exp(ano_bro);
         if (l_type == NULL || r_type == NULL) return NULL;

@@ -652,7 +652,7 @@ void translate_Exp(struct Node* now,Operand place){
     }
     
     if (!strcmp(fir_bro->index,"DOT\0")) {
-        //Exp -> Exp DOT ID,结构体
+        //Exp -> Exp DOT ID
         Operand temp1 = new_temp();
         translate_Exp(child, temp1);
         if (temp1 -> kind == VARIABLE) {
