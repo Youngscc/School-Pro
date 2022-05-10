@@ -7,6 +7,6 @@
 
 using namespace std;
 
-void lsh(double similarity_rate, int hash_number);
+void lsh(double similarity_rate, int hash_number, int t);
 
 # endif

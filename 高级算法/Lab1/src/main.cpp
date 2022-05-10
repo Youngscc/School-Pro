@@ -3,6 +3,8 @@
 # include "naive.h"
 # include "minhash.h"
 # include "lsh.h"
+# include "testlib.h"
+# include "mix.h"
 using namespace std;
 
 int n,m;
@@ -10,18 +12,22 @@ ifstream inFile;
 ofstream outFile;
 vector <vector <int> > sets;
 
-char* getOutName(char *s,char *way) {
-    int len = strlen(s);
+int randit(int n) {
+    return rnd.next(n);
+}
+
+string getOutName(string s, int way, int number=0, int p=0) {
+    int len = s.length();
     for (int i=len-1; i>=0; --i) 
         if (s[i] == '.') {
-            s[i] = '\0';
+            s = s.substr(0, i);
             break;
         }
-    static char outName[50];
-    if (way[1] == 'l') sprintf(outName, "%s_l.ans", s);
-    else if (way[1] == 'm') sprintf(outName, "%s_m.ans", s);
-    else if (way[1] == 'n') sprintf(outName, "%s_n.ans", s);
-    return outName;
+    if (way == 4) s += "_lsh_" +to_string(number)+ "_"+to_string(p) +".ans";
+    else if (way == 3) s += "_mix_"+to_string(number)+".ans";
+    else if (way == 2) s += "_minhash_"+to_string(number)+".ans";
+    else if (way == 1) s += "_naive.ans";
+    return s;
 }
 
 void init(ifstream &inFile, vector <vector <int> > &sets) {
@@ -38,28 +44,22 @@ void init(ifstream &inFile, vector <vector <int> > &sets) {
     for (int i=0; i<=m; ++i) sets.push_back(single_set);
     sort(data.begin(), data.end());
     data.erase(unique(data.begin(), data.end()),data.end());
-    int lastid = data[0].first;
-    
     for (auto p:data) {
         sets[p.first].push_back(p.second);
     } 
 }
 
 int main(int argc, char **argv) {
-    if (argc != 4 && argc != 5) {
-        cerr << "Error!\n";
-        exit(0);
-    }
-    if (argv[3][1] == 'n' && argc != 4) {
-        cerr << "Error!\n";
-        exit(0);
-    }
-    if (argv[3][1] == 'm' && argc != 5) {
-        cerr << "Error!\n";
-        exit(0);
-    }
-    inFile.open(argv[1]);
-    outFile.open(getOutName(argv[1], argv[3]));
+    registerGen(argc, argv, 1);
+    string filename = opt <string> ("F");
+    int way = opt <int> ("W");
+    double rate = opt <double> ("R");
+    assert(("The key W must be 1 2 3 or 4", way >= 1 && way <= 4));
+    assert(("The similarity rate must be in [0, 1]", rate >= 0 && rate <= 1));
+    inFile.open(filename);
+    if (way == 2 || way == 3) outFile.open(getOutName(filename, way, opt <int> ("H")));
+    else if (way == 4) outFile.open(getOutName(filename, way, opt <int> ("H"), opt <int> ("P")));
+    else outFile.open(getOutName(filename, way));
     if (inFile.fail()) {
         cerr << "Input Error\n";
         exit(0);
@@ -70,9 +70,10 @@ int main(int argc, char **argv) {
     }
     init(inFile, sets);
     long time_0 = clock();
-    if (argv[3][1] == 'n') naive(strtod(argv[2], NULL));
-    else if (argv[3][1] == 'm') min_hash(strtod(argv[2], NULL), atoi(argv[4]));
-    else if (argv[3][1] == 'l') lsh(strtod(argv[2], NULL), atoi(argv[4]));
+    if (way == 1) naive(rate);
+    else if (way == 2) min_hash(rate, opt <int> ("H"));
+    else if (way == 3) mix(rate, opt <int> ("H"));
+    else if (way == 4) lsh(rate, opt <int> ("H"), opt <int> ("P"));
     long time_1 = clock();
     outFile << "Time cost is " << 1.0 * (time_1 - time_0)/CLOCKS_PER_SEC << " s\n";
     inFile.close();
