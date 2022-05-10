@@ -1,0 +1,20 @@
+1000000 inserts
+1000000 finds
+Array:
+Time cost of INSERT is 97.2356 s
+Time cost of FIND is 797.305 s
+BloomFilter: p = 0.000742
+Time cost of INSERT is 0.48922 s
+Time cost of FIND is 3.38041 s
+
+E(error) = 742
+error = 129
+
+2000000 inserts finds removes
+Array:
+Time cost is 427.466 s
+BloomFilter: p = 0.000742
+Time cost is 3.1909 s
+
+E(error) = 494.547
+error = 2
