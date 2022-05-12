@@ -1,6 +1,6 @@
 import enum
 
-from data_manager.mysql_connect import MySQLConnect
+from data_manager.MysqlConnect import MySQLConnect
 
 
 class Category(enum.Enum):
@@ -35,7 +35,7 @@ class ParticipateInManager:
             ", ".join(map(repr, [team, competition, medal.value, place, category.value])))
 
     def list_participate_in(self, competition: str):
-        return self._conn.query_all(ParticipateInManager._SEARCH_RAW_SHOW + "WHERE Competition = '{}';".format(competition))
+        return self._conn.query_all(ParticipateInManager._SEARCH_RAW_SHOW + "WHERE Competition = '{}' ORDER BY Place ASC;".format(competition))
 
     def search_participate_in_with_competition(self, competition: str):
         return self._conn.query_all(ParticipateInManager._SEARCH_RAW +

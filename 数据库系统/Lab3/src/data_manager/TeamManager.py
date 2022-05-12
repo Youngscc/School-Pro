@@ -1,4 +1,4 @@
-from data_manager.mysql_connect import MySQLConnect
+from data_manager.MysqlConnect import MySQLConnect
 
 
 class TeamManager:

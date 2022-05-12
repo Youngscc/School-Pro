@@ -1,12 +1,12 @@
 import enum
 
-from data_manager.mysql_connect import MySQLConnect
-from data_manager.competition_manager import CompetitionManager, Level, STR2LEVEL
-from data_manager.participatein_manager import Category, Medal, ParticipateInManager, STR2MEDAL, STR2CATEGORY
-from data_manager.school_manager import SchoolManager
-from data_manager.player_manager import PlayerManager, Sex, Grade, STR2SEX, STR2GRADE
-from data_manager.team_manager import TeamManager
-from data_manager.membersof_manager import MembersOfManager, STR2ROLE
+from data_manager.MysqlConnect import MySQLConnect
+from data_manager.CompetitionManager import CompetitionManager, Level, STR2LEVEL
+from data_manager.ParticipateInManager import Category, Medal, ParticipateInManager, STR2MEDAL, STR2CATEGORY
+from data_manager.SchoolManager import SchoolManager
+from data_manager.PlayerManager import PlayerManager, Sex, Grade, STR2SEX, STR2GRADE
+from data_manager.TeamManager import TeamManager
+from data_manager.MembersOfManager import MembersOfManager, STR2ROLE
 
 mysql_connect = MySQLConnect()
 school_manager = SchoolManager(mysql_connect)

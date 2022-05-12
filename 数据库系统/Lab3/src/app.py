@@ -1,16 +1,17 @@
 import sys
 import re
 
-from data_manager.competition_manager import CompetitionManager, Level, STR2LEVEL
-from data_manager.mysql_connect import MySQLConnect
-from data_manager.participatein_manager import Category, Medal, ParticipateInManager, STR2MEDAL, STR2CATEGORY
-from data_manager.school_manager import SchoolManager
-from data_manager.player_manager import PlayerManager, Sex, Grade, STR2SEX, STR2GRADE
-from data_manager.team_manager import TeamManager
-from data_manager.membersof_manager import MembersOfManager, STR2ROLE
+from data_manager.CompetitionManager import CompetitionManager, Level, STR2LEVEL
+from data_manager.MysqlConnect import MySQLConnect
+from data_manager.ParticipateInManager import Category, Medal, ParticipateInManager, STR2MEDAL, STR2CATEGORY
+from data_manager.SchoolManager import SchoolManager
+from data_manager.PlayerManager import PlayerManager, Sex, Grade, STR2SEX, STR2GRADE
+from data_manager.TeamManager import TeamManager
+from data_manager.MembersOfManager import MembersOfManager, STR2ROLE
 from PyQt5.QtGui import QStandardItem, QStandardItemModel
 from PyQt5.QtWidgets import QApplication, QHeaderView, QInputDialog, QMainWindow, QMessageBox, QTableView
 from ui.mainWindows import Ui_MainWindow
+from PyQt5.QtGui import QIcon
 
 
 class App(QMainWindow, Ui_MainWindow):
@@ -27,6 +28,11 @@ class App(QMainWindow, Ui_MainWindow):
         self.init_ui()
         self.init_action()
         self.init_manager()
+        self.setupUI()
+
+    def setupUI(self):
+        self.setWindowTitle('竞赛管理系统')
+        self.setWindowIcon(QIcon('ui/ico.png'))
 
     def init_ui(self):
         self.ui = Ui_MainWindow()
@@ -576,7 +582,7 @@ class App(QMainWindow, Ui_MainWindow):
 
         if category == "正式":
             medal, ok = QInputDialog.getItem(self, "选择奖牌", "选择奖牌", map(lambda x: x.value, Medal))
-        else :
+        else:
             medal, ok = QInputDialog.getItem(self, "选择奖牌", "选择奖牌", map(lambda x: x.value, Medal[3:4]))
         if not ok:
             QMessageBox.critical(self, "错误", "无法获取输入内容")
@@ -598,7 +604,7 @@ class App(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "提示", "添加成功")
         self.list_participate_in(competition)
 
-    def list_participate_in(self, competition = 0):
+    def list_participate_in(self, competition=0):
         if competition == 0:
             competition, ok = QInputDialog.getText(self, "请输入比赛名称", "请输入比赛名称")
             if not ok:

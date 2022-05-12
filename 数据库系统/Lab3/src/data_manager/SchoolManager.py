@@ -1,9 +1,9 @@
-from data_manager.mysql_connect import MySQLConnect
+from data_manager.MysqlConnect import MySQLConnect
 
 
 class SchoolManager:
     _SEARCH_RAW = """SELECT school.Id, school.Name, school.Nation, school.Province,
-            school.City, P.num FROM school INNER JOIN (SELECT school, count(*) FROM players GROUP BY school) 
+            school.City, IFNULL(P.num, 0) FROM school LEFT JOIN (SELECT school, count(*) FROM players GROUP BY school) 
             AS P(school, num) ON school.Name = P.School"""
 
     def __init__(self, conn: MySQLConnect):

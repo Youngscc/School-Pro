@@ -1,6 +1,6 @@
 import enum
 
-from data_manager.mysql_connect import MySQLConnect
+from data_manager.MysqlConnect import MySQLConnect
 
 
 class Role(enum.Enum):
@@ -13,7 +13,7 @@ STR2ROLE = dict(map(lambda x: (x.value, x), Role))
 
 
 class MembersOfManager:
-    _SEARCH_RAW = """SELECT members_of.ID, members_of.Player, 
+    _SEARCH_RAW = """SELECT members_of.Player, 
     members_of.Team, members_of.Role FROM members_of """
 
     def __init__(self, conn: MySQLConnect):
