@@ -1,0 +1,6 @@
+\paragraph{3.5}~{}
+
+设$Y_i$为第$i$次进行步骤二的$|{x_1,\cdots,x_n}/{y_1,\cdots,y_{k-1}}|$，$T$进行步骤一的次数，那么总复杂度为$E[T]*E[Y_i]$。
+$$E[T] = \sum_{i=1}^{\infty} i*\frac{1}{n!}*(\frac{n!-1}{n!})^{i-1}=n!$$
+$$E[Y_i] = \frac{1}{n!} \sum_{i=1}^n C_n^i (n-i)! < e$$
+总复杂度为$O(n!)$

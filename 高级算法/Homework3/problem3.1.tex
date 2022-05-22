@@ -1,0 +1,15 @@
+\paragraph{3.1}~{}
+
+向长度为$2r$的正方形内随机投掷$n$个点，设其中有$x$个点落进圆内，令$q=\frac{x}{n}\approx\frac{\pi r^2}{4r^2} = \frac{\pi}{4}$，
+我们用$4q$来估计$\pi$，由$E[x] = \frac{n\pi}{4}$有
+$$Pr[4q>\pi + \delta] = Pr[\frac{4x}{n} > \pi + \delta] = Pr[x > E[x](1+\frac{\pi}{\delta})] \le e^{-\frac{n\delta^2}{12\pi}}$$
+$$Pr[4q<\pi - \delta] = Pr[\frac{4x}{n} < \pi - \delta] = Pr[x < E[x](1-\frac{\pi}{\delta})] \le e^{-\frac{n\delta^2}{8\pi}}$$
+则有
+$$
+\begin{aligned}
+    Pr[4q \in [\pi - \delta, \pi + \delta]]
+    &= Pr[x \in [E(x)(1-\frac{\delta}{\pi})], E(x)(1+\frac{\delta}{\pi})] \\
+    &\ge 1 - e^{-\frac{n\delta^2}{12\pi}} - e^{-\frac{n\delta^2}{8\pi}}
+\end{aligned}
+$$
+所以置信区间为$[\pi - \delta, \pi + \delta]$，置信度为$1 - e^{-\frac{n\delta^2}{12\pi}} - e^{-\frac{n\delta^2}{8\pi}}$

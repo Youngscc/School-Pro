@@ -1,0 +1,12 @@
+\paragraph{3.2}~{}
+
+由$Pr[\frac{kn}{m} \in [(1-\lambda)|A|, (1+\lambda)|A|]] > 1-\gamma$可以得到
+$$Pr[\frac{kn}{m} < (1-\lambda)|A|] + Pr[\frac{kn}{m} > (1+\lambda)|A|] < \gamma$$
+令$X = kn$，则$E[X] = |A|*m$
+上式即为
+$$Pr[X < (1-\lambda)E[X]] + Pr[X > (1+\lambda)E[X]] < \gamma$$
+根据切尔诺夫界可以得到
+$$Pr[X < (1-\lambda)E[X]] \le e^{-\frac{|A| m\lambda^2}{2}}$$
+$$Pr[X > (1-\lambda)E[X]] \le e^{-\frac{|A| m\lambda^2}{3}}$$
+因此$m$需要满足
+$$e^{-\frac{|A| m\lambda^2}{2}} + e^{-\frac{|A| m\lambda^2}{3}} \le \gamma$$
