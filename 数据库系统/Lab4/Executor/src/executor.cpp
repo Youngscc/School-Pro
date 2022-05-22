@@ -378,7 +378,7 @@ bool NestedLoopJoinOperator::execute(int numAvailableBufPages,
                             } else if (l_pd) {
                                 auto l_raw = l_tuple[l_schema.getAttrNum(attr)];
                                 raw_tuple += l_raw;
-                            } else {
+                            } else if (r_pd){
                                 auto r_raw = r_tuple[r_schema.getAttrNum(attr)];
                                 raw_tuple += r_raw;
                             }
