@@ -44,19 +44,28 @@ namespace test1 {
     }
 
     void Main(){
-        printf("(1) the ans is %lf\n", Romberg(0, 1, 20, 1e-6, f1));
-        printf("(2) the ans is %lf\n", Romberg(1, 3, 20, 1e-6, f2));
-        printf("(3) the ans is %lf\n", Romberg(0, 1, 20, 1e-6, f3));
-        printf("(4) the ans is %lf\n", Romberg(0, 1, 20, 1e-6, f4));
+        cerr << "When N is 3" << endl;
+        printf("(1) the ans is %.10lf\n", Romberg(0, 1, 3, 1e-6, f1));
+        printf("(2) the ans is %.10lf\n", Romberg(1, 3, 3, 1e-6, f2));
+        printf("(3) the ans is %.10lf\n", Romberg(0, 1, 3, 1e-6, f3));
+        printf("(4) the ans is %.10lf\n", Romberg(0, 1, 3, 1e-6, f4));
+        cerr << "When N is 10" << endl;
+
+        printf("(1) the ans is %.10lf\n", Romberg(0, 1, 10, 1e-6, f1));
+        printf("(2) the ans is %.10lf\n", Romberg(1, 3, 10, 1e-6, f2));
+        printf("(3) the ans is %.10lf\n", Romberg(0, 1, 10, 1e-6, f3));
+        printf("(4) the ans is %.10lf\n", Romberg(0, 1, 10, 1e-6, f4));
+        cerr << "When N is 20" << endl;
+
+        printf("(1) the ans is %.10lf\n", Romberg(0, 1, 20, 1e-6, f1));
+        printf("(2) the ans is %.10lf\n", Romberg(1, 3, 20, 1e-6, f2));
+        printf("(3) the ans is %.10lf\n", Romberg(0, 1, 20, 1e-6, f3));
+        printf("(4) the ans is %.10lf\n", Romberg(0, 1, 20, 1e-6, f4));
     }
 }
 
-namespace test2 {
-    double 
-}
 
 int main(int argc, char** argv) {
-    if (argc != 2) cerr << "Error\n";
-    else if (argv[1][0] == '1') test1::Main();
-    else if (argv[1][0] == '2') test2::Main();
+    test1::Main();
+
 }

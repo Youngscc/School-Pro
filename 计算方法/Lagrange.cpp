@@ -7,9 +7,9 @@ using namespace std;
 const double pi = acos(-1);
 
 double Lagrange(double *x, double *y, int n, double X) {
+    /* *x *y 为数据点， n为数据点个数-1， x为插值点*/
     double Y = 0;
-    int k = 0;
-    for (; k<=n; ++k) {
+    for (int k=0; k<=n; ++k) {
         double l = 1;
         for (int j=0; j<=n; ++j) {
             if (k == j) continue;
@@ -22,11 +22,12 @@ double Lagrange(double *x, double *y, int n, double X) {
 
 namespace test1 {
 
-    const double test_x1[] = {0.75, 1.75, 2.75, 3.75, 5.75};
-    const double test_x2[] = {-0.95, -0.05, 0.05, 0.95};
+    double test_x1[] = {0.75, 1.75, 2.75, 3.75, 4.75};
+    double test_x2[] = {-0.95, -0.05, 0.05, 0.95};
+    double test_x3[] = {-4.75, -0.25, 0.25, 4.75};
 
     double g1(double x) {
-        return 1.0 / (1+x*x);
+        return 1.0 / (1.0 + x*x);
     }
 
     double g2(double x) {
@@ -47,13 +48,14 @@ namespace test1 {
         for (int i=0; i<=n; ++i) x[i] = cos((2*i+1)*pi/(2*(n+1)));
     }
 
-    void check (double (*f)(double x), void (*gen)(double *x,int n), int n, const double *test, int test_n) {
+    void check (double (*f)(double x), void (*gen)(double *x,int n), int n, double *test, int test_n) {
         double x[n+1],y[n+1];
         gen(x, n);
         for (int i=0; i<=n; ++i) y[i] = f(x[i]);
         printf("When n is equal to %d \n",n);
         for (int i=0; i<test_n; ++i) {
-            printf("x = %lf  f(x) = %lf\n", test[i], Lagrange(x, y, n, test[i]));
+            double ans = Lagrange(x, y, n, test[i]);
+            printf("x = %lf  f(x) = %lf err = %lf\n", test[i], ans, ans-f(test[i]));
         }
     }
 
@@ -73,14 +75,14 @@ namespace test1 {
         } else if (opt == 2) {
             printf(" ------------------------ \n");
             printf("This is f(x) = 1/(x^2+1) \n");
-            check(g1, gen2, 5, test_x1, 5);
-            check(g1, gen2, 10, test_x1, 5);
-            check(g1, gen2, 20, test_x1, 5);
+            check(g1, gen2, 5, test_x2, 4);
+            check(g1, gen2, 10, test_x2, 4);
+            check(g1, gen2, 20, test_x2, 4);
             printf(" ------------------------ \n");
             printf("This is f(x) = e^x \n");
-            check(g2, gen1, 5, test_x2, 4);
-            check(g2, gen1, 10, test_x2, 4);
-            check(g2, gen1, 20, test_x2, 4);
+            check(g2, gen1, 5, test_x3, 4);
+            check(g2, gen1, 10, test_x3, 4);
+            check(g2, gen1, 20, test_x3, 4);
             printf(" ------------------------ \n");
         } else if (opt == 3) {
             printf(" ------------------------ \n");
@@ -110,7 +112,8 @@ namespace test2 {
         double x[3], y[3];
         for (int i=0; i<=2; ++i) x[i] = gen_x[i], y[i] = sqrt(x[i]);
         for (int i=0; i<4; ++i) {
-            printf("x = %lf  f(x) = %lf\n", test[i], Lagrange(x, y, n, test[i]));
+            double ans = Lagrange(x, y, n, test[i]);
+            printf("x = %lf  f(x) = %lf  err = %lf\n", test[i], ans, ans-sqrt(test[i]));
         }
     }
 
