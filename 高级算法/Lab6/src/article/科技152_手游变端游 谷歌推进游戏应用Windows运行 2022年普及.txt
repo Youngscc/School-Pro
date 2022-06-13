@@ -1,0 +1,8 @@
+　　【CNMO新闻】有消息显示，谷歌正在推进一项关于Android游戏引入Windows PC的计划，明年将推出相关的游戏应用，让Windows笔记本、平板电脑和PC能有运行来自Google Play平台的游戏。这一项目并未与微软进行合作，而是谷歌独自设想的一种兼容方式。
+　　相信对于国内用户对这种模式并不陌生，但是来自谷歌的支持此类跨平台运行也是第一次。即将推出的应用程序还将允许玩家在手机、平板电脑或Chromebook上玩游戏后，在桌面PC上继续游戏。
+　　"玩家将能够在更多的设备上体验他们最喜欢的Google Play游戏：在手机、平板电脑、Chromebook以及很快的Windows PC之间无缝切换，"Google负责Android和Google Play游戏的产品总监Greg Hartrell在一份声明中说。"这个Google打造的产品将Android游戏的精华带到了更多的笔记本电脑和台式机上，我们很高兴能扩大我们的平台，让玩家更多的享受他们喜爱的游戏。"
+　　目前还不清楚Google使用什么技术在Windows上模拟Android应用，但可以确定的是游戏将在本地运行，而不是从云端流转。
+　　"这将是一个由Google发布的本地Windows应用程序，它将支持Windows 10及以上版本，"Hartrell解释说。"它将不涉及游戏视频流。"Google的应用程序将不依赖于与Windows 11的任何特殊整合，而且该公司还将自行分发该应用程序。“
+　　Google的公告是在微软开始在Windows 11 PC上测试Android应用几个月后发布的。微软已经为Android建立了一个底层的Windows子系统，它能够运行来自不同来源的Android应用。这家软件巨头已经与亚马逊合作，让Windows用户原生安装来自亚马逊Appstore的游戏和应用程序，但原生Google Play支持不会通过微软的功能正式提供。
+版权所有，未经许可不得转载
+
