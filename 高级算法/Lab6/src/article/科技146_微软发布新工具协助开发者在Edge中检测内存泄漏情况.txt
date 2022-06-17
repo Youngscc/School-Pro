@@ -1,0 +1,9 @@
+　　【CNMO新闻】微软在其Edge浏览器中公布了一个新工具，为开发者提供监测内存泄漏问题，这类问题容易导致放置当一段代码在停止运行后没有正确地回收和取消分配内存。这在长期运行的应用程序中尤其不可取，大量的未释放内存随着时间的推移而累积，拖累系统整体性能显著下降。
+　　在一篇博客文章中，微软透露，其Edge DevTools套件中的Detached Elements工具可以让开发者调查文档对象模型（DOM）的泄漏。顾名思义，它将向程序员展示一个分离元素的列表以方便以进一步调查。
+　　微软在这里发布了一个演示用聊天程序，展示如何通过Edge测试分离元素：
+　　https://microsoftedge.github.io/Demos/detached-elements/
+　　该公司的博文还包含了关于如何在这个应用程序以及真实世界的应用程序中进一步调查DOM泄漏的广泛信息，请在这里查看：
+　　https://blogs.Windows.com/msedgedev/2021/12/09/debug-memory-leaks-detached-elements-tool-devtools/
+　　分离元素面板从Edge 97开始提供，你可以通过Edge DevTools右上方的反馈图标向微软提交关于它的反馈。
+版权所有，未经许可不得转载
+
