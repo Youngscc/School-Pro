@@ -1,3 +1,5 @@
 **/*.docx
 **/*.doc
 **/*.vsdx
+**/*.ppt
+**/*/pptx
